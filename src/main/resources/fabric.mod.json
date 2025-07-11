@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "honeyglaze",
+	"version": "${version}",
+	"name": "HoneyGlaze",
+	"description": "This is a first time mode that I hope to add to over time.",
+	"authors": [
+		"Bria Williams"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/honeyglaze/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.honeyglaze.HoneyGlaze"
+		],
+		"fabric-datagen": [
+			"com.honeyglaze.HoneyGlazeDataGenerator"
+		],
+		"client": [
+			"com.honeyglaze.HoneyGlazeClient"
+		]
+	},
+	"mixins": [
+		"honeyglaze.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
